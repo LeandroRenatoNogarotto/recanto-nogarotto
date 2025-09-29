@@ -161,10 +161,23 @@ img {
   position: absolute;
   inset: 0;
   background: 
-    linear-gradient(180deg, rgba(17, 22, 28, 0.25), rgba(17, 22, 28, 0.75)),
-    radial-gradient(1200px 800px at 40% -20%, rgba(243,139,182,.10), transparent 70%),
-    url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
-  filter: saturate(108%);
+    linear-gradient(180deg, rgba(17, 22, 28, 0.35), rgba(17, 22, 28, 0.65)),
+    radial-gradient(1200px 800px at 40% -20%, rgba(243,139,182,.08), transparent 70%);
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+  filter: saturate(85%) brightness(0.8);
 }
 
 .hero-content {
